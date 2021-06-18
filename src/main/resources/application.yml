@@ -1,3 +1,6 @@
+jwt:
+  secret: 'a8a845f3-29ea-4844-8a8e-5a153da9f6e2a8a845f3-29ea-4844-8a8e-5a153da9f6e2'
+
 server:
   port: 8081
 spring:
@@ -12,3 +15,8 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri:
